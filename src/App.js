@@ -2,39 +2,39 @@ import { useEffect, useState } from "react";
 import ErrorBoundary from "./ErrorBoundary";
 
 function App() {
-  const [showInputLib, setShowInputLib] = useState(false);
+  // const [showInputLib, setShowInputLib] = useState(false);
   const [env, setEnv] = useState(
     localStorage?.getItem("pythonLibraries")
       ? localStorage?.getItem("pythonLibraries").split(",")
       : ["numpy", "matplotlib", "bokeh", "pandas", "panel"]
   );
 
-  const handleInput = (e) => {
-    console.log(e);
-    console.log(e.target.innerText);
-  };
+  // const handleInput = (e) => {
+  //   console.log(e);
+  //   console.log(e.target.innerText);
+  // };
 
-  const addNewLib = (e) => {
-    e.preventDefault();
-    if (e.target[0].value.trim() !== "") {
-      setEnv([...new Set([...env, e.target[0].value])]);
-      localStorage.setItem("pythonLibraries", [
-        ...new Set([...env, e.target[0].value]),
-      ]);
-    }
-  };
+  // const addNewLib = (e) => {
+  //   e.preventDefault();
+  //   if (e.target[0].value.trim() !== "") {
+  //     setEnv([...new Set([...env, e.target[0].value])]);
+  //     localStorage.setItem("pythonLibraries", [
+  //       ...new Set([...env, e.target[0].value]),
+  //     ]);
+  //   }
+  // };
 
-  useEffect(() => {
-    const elements = document.getElementsByTagName("py-repl");
-    for (let element of elements) {
-      element.addEventListener("input", handleInput);
-    }
-    return () => {
-      for (let element of elements) {
-        element.removeEventListener("input", handleInput);
-      }
-    };
-  }, []);
+  // useEffect(() => {
+  //   const elements = document.getElementsByTagName("py-repl");
+  //   for (let element of elements) {
+  //     element.addEventListener("input", handleInput);
+  //   }
+  //   return () => {
+  //     for (let element of elements) {
+  //       element.removeEventListener("input", handleInput);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <>
