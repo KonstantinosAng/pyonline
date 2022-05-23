@@ -6,8 +6,8 @@
   color: white;
 }
 
-.buttons-box {
-  top: 50%;
+#btnRun {
+  top: 45%;
   transform: translateY(-50%);
   width: -moz-fit-content;
   width: fit-content;
@@ -28,6 +28,9 @@
   padding: 0 2px 0 12px !important;
 }
 
+.cm-content {
+  background-color: white;
+}
 .cm-lineNumbers {
   color: rgb(71, 85, 105);
 }
