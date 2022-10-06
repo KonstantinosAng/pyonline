@@ -5,7 +5,7 @@ Online python playground using [Anaconda's pyscript](https://pyscript.net/), [re
 ## Demo
 
 <div align="center">
-  <h1><a href="https://constantine.dev:8080/pyonline"> DEMO </a></h1>
+  <h1><a href="https://pyonline.constantine.dev"> DEMO </a></h1>
 </div>
 
 ## Installation
